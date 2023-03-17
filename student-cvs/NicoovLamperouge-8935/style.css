@@ -16,22 +16,85 @@ body {
 }
 
 
-.container-table thead tr{
+.container-table thead tr {
     background-color: #b891c2;
     color: #fff;
     text-align: left;
     font-weight: bold;
 }
 
-.container-table th, .container-table td{
+.container-table th,
+.container-table td {
     padding: 12px 15px;
 }
 
-.container-table tbody tr{
+.container-table tbody tr {
     border-bottom: 1px solid #020024;
 }
 
 
 p {
     line-height: 1.5;
+}
+
+
+/* Formulario */
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px;
+    line-height: 50px;
+}
+
+.form-container label {
+    font-weight: bold;
+}
+
+.form-container input {
+    height: 30px;
+    background-color: transparent;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    color: #020024;
+}
+
+.field-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px;
+}
+
+textarea {
+    display: block;
+    resize: vertical;
+}
+
+
+.send-button {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+}
+
+.send-button button {
+    background-color: black;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    margin-top: 0.6rem;
+    font-weight: bold;
+    border: 0px solid #646cff;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.send-button button:hover {
+    background-color: #b891c2;
+    border: 0px solid #b891c2;
+    color: white;
 }
